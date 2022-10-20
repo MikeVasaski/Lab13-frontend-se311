@@ -7,6 +7,7 @@ import EventLayoutView from '@/views/event/EventLayoutView.vue'
 import EventDetailView from '@/views/event/EventDetailView.vue'
 import NotFoundView from '@/views/NotFoundView.vue'
 import NetWorkErrorView from '@/views/NetworkErrorView.vue'
+import Login from '@/views/LoginFormView.vue'
 import AddEvent from '@/views/EventForm.vue'
 import NProgress from 'nprogress'
 import GStore from '@/store'
@@ -86,6 +87,11 @@ const routes = [
     name: '404Resource',
     component: NotFoundView,
     props: true
+  },
+  {
+    path: '/Login',
+    name: 'Login',
+    component: Login
   },
   {
     path: '/:catchAll(.*)',
